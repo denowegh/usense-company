@@ -18,7 +18,7 @@ export class PasswordStrengthComponent {
   }
 
   updatePasswordStrength(password: string) {
-    const hasLetters = /[a-zA-Z]/.test(password);
+    const hasLetters = /[а-яА-Яa-zA-Z]/.test(password);
     const hasNumbers = /\d/.test(password);
     const hasSymbols = /\W/.test(password);
 
