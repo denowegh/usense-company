@@ -8,6 +8,7 @@ import { PasswordInputComponent } from '../../components/password-input/password
   styleUrl: './password-strength.component.scss',
   standalone: true,
   imports: [PasswordInputComponent],
+  providers: [PasswordStrengthService],
 })
 export class PasswordStrengthComponent {
   passwordStrength = {
